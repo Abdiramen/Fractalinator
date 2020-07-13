@@ -1,0 +1,33 @@
+[package]
+name = "fractalinator"
+version = "0.0.0"
+authors = ["Abdirahman A. Osman <aaoyt7@mst.edu>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# GIF {en/de)coder
+#gif = "0.10.3"
+image = "0.22"
+# used for complex numbers
+num = "0.2"
+# JSON (de)serializing framework
+#serde_json = "1.0"
+
+# command line argument parser
+clap = "2.33"
+# Property based testing
+#quickcheck = "0.9.2"
+
+# local dependencies
+#color_interpolator = { path = "../color_interpolator" }
+#swatchet = { path = "../swatchet" }
+
+[lib]
+name = "fractlib"
+path = "src/lib.rs"
+
+#[bin]
+#name = "fractbin"
+#path = "src/bin.rs"
